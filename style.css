@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.container-sm {
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+	background-color: #0f1410 !important;
+	height: 73px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	padding: 10px;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+header ul {
+	display: flex;
+	align-items: center;
+}
+
+header ul li {
+	list-style: none;
+	margin: 10px;
+}
+
+header ul li a {
+	color: #c9cac9;
+	cursor: pointer;
+}
+
+.btn {
+	background-color: #02aa44;
+	border-radius: 25px;
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #05993e;
+}
+
+.show-case {
+	background-color: #0f1410;
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-case-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.show-case-items .right-side h1 {
+	color: #fff;
+	font-size: 5rem;
+	line-height: 0.95;
+	font-weight: 700;
+}
+
+.show-case-items .right-side p {
+	font-size: 25px;
+	color: #c9cac9;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.show-case-items .left-side .download {
+	display: flex;
+	flex-direction: row;
+}
+
+.show-case-items .right-side .download img {
+	cursor: pointer;
+	margin: 10px;
+}
+
+.show-case-items .left-side img {
+	margin-top: 80px;
+	width: 80%;
+}
+
+.burger {
+	display: none;
+	width: 30px;
+	color: #fff;
+}
+
+.menu.active {
+	display: block;
+}
+
+.features {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.features .right-side {
+	display: flex;
+	flex-direction: column;
+	padding: 14px;
+	margin: 10px;
+}
+
+.features .right-side .top-bar {
+	color: #02aa44;
+}
+.features .right-side h1 {
+	padding: 10px;
+	font-size: 1.75rem;
+}
+
+.features .right-side .text {
+	font-size: 1.15rem;
+	padding: 10px;
+	color: #606060;
+}
+.features .left-side {
+	margin: 10px;
+}
+.features .left-side img {
+	width: 420px;
+}
+
+.features-2 {
+	flex-direction: row-reverse;
+}
+
+.achievements {
+	width: 100%;
+	height: 360px;
+	background-color: #0f1410;
+}
+
+.achievement-list {
+	height: 100%;
+	color: #fff;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-content: center;
+}
+
+.achievement-list svg {
+	width: 30px;
+}
+
+.achievement-list .achievement-desc {
+	font-size: 1.25rem;
+}
+
+.stars svg {
+	color: #ffce2f;
+}
+
+.award svg {
+	color: #f97414;
+}
+
+.group {
+	color: #02aa44;
+}
+
+.uniqu {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	padding: 40px;
+}
+
+.uniqu h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem;
+}
+
+.unique-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.unique-content-item {
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.unique-content-item h2 {
+	padding: 10px;
+}
+.unique-content-item p {
+	/* padding: 10px; */
+	text-align: center;
+}
+
+.unique-content-item .unique-content-1 {
+	align-items: center;
+	background-color: #2d7ef8;
+	padding: 10px 15px;
+	border-radius: 15px 10px 15px 10px;
+}
+.unique-content-item .unique-content-2 {
+	align-items: center;
+	background-color: #02aa44;
+	padding: 10px 15px;
+	border-radius: 15px 10px 15px 10px;
+}
+.unique-content-item .unique-content-3 {
+	align-items: center;
+	background-color: #f97414;
+	padding: 10px 15px;
+	border-radius: 15px 10px 15px 10px;
+}
+
+.unique-content-item svg {
+	width: 30px;
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.menu {
+		display: none;
+		width: 100%;
+		position: absolute;
+		top: 70px;
+		background-color: #0f1410;
+		z-index: 2;
+		padding: 15px;
+	}
+	.menu li:hover {
+		background-color: #191f1a;
+	}
+	.purchase-btn {
+		display: none;
+	}
+
+	.burger {
+		display: inline;
+	}
+
+	.show-case-items .left-side {
+		display: none;
+	}
+
+	.right-side h1 {
+		font-size: 3rem;
+	}
+}
